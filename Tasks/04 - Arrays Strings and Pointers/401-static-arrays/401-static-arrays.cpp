@@ -44,14 +44,19 @@ int main()
 
     //Write task 1 solution here
     int64_t sum = 0L;   //Result needs to be bigger than int to avoid overflow
+    for (int i = 0; i < N; i++) {
+        sum += nums[i];
+        
+    }
 
-
+    cout << "The sum of all elements = " << sum << endl;
     // ***********************************************************************************************************************
     // TASK 2 - calculate the mean of all elements (this will be a fractional value) and display to 1 decimal place accuracy *
     // ***********************************************************************************************************************
-
+    
     //Write task 2 solution here
-
+    float mean = sum / N;
+    printf("the mean of all the elements is %.1f\n", mean);
 }
 
 
